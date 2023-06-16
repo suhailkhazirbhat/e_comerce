@@ -2,7 +2,7 @@
   "name": "mern-back-end",
   "version": "1.0.0",
   "description": "This is backend of ecommerce flipkart clone project",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "start": "node ./src/index.server.js"
   },
