@@ -4,7 +4,7 @@
   "description": "This is backend of ecommerce flipkart clone project",
   "main": "server.js",
   "scripts": {
-    "start": "node ./src/index.server.js"
+    "start": "node server.js"
   },
   "keywords": [
     "ecommerce",

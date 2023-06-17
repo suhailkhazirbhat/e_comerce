@@ -6,10 +6,12 @@ const path = require("path");
 const cors = require("cors");
 
 //routes
+// ./routes/auth
+// ./routes/admin/auth
 const authRoutes = require("./routes/auth");
 const adminRoutes = require("./routes/admin/auth");
 const categoryRoutes = require("./routes/category");
-const productRoutes = require("./routes/product");
+// const productRoutes = require("./routes/product");
 const cartRoutes = require("./routes/cart");
 const initialDataRoutes = require("./routes/admin/initialData");
 const pageRoutes = require("./routes/admin/page");
@@ -43,7 +45,7 @@ app.use("/public", express.static(path.join(__dirname, "uploads")));
 app.use("/api", authRoutes);
 app.use("/api", adminRoutes);
 app.use("/api", categoryRoutes);
-app.use("/api", productRoutes);
+// app.use("/api", productRoutes);
 app.use("/api", cartRoutes);
 app.use("/api", initialDataRoutes);
 app.use("/api", pageRoutes);
